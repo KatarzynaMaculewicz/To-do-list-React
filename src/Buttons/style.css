@@ -1,0 +1,25 @@
+.section__toggleTasksButton {
+  color: teal;
+  background-color: transparent;
+  border: none;
+  transition: color 0.75s linear;
+}
+
+.section__toggleTasksButton:hover {
+  color: hsl(180, 48%, 57%);
+  cursor: pointer;
+}
+
+.section__toggleTasksButton:disabled {
+  color: rgb(174 176 176);
+  cursor: auto;
+}
+
+@media (max-width:767px) {
+  .section__toggleTasksButtons {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+}
