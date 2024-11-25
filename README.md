@@ -6,7 +6,7 @@ It is a basic to-do list application that offers all the essential features need
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![image](public/App.png)
+![image](./src/images/to-do-list.gif)
 
 ## Demo
 
