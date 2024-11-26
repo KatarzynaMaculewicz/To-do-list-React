@@ -8,10 +8,13 @@ import { useState } from "react";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
+
+  const defaultTasks = [
     { id: 1, content: "przejść na Reacta", done: false },
     { id: 2, content: "zjeść kolację", done: true },
-  ]);
+];
+
+  const [tasks, setTasks] = useState(defaultTasks);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone)
@@ -52,9 +55,7 @@ function App() {
           id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
         },
       ]);
-    }
-
-    return;
+    };
   };
 
   return (
