@@ -21,6 +21,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - ES6 + features
 - JSX
 - React
+- Styled-components
+- Custom Hooks
 
 ## Available Scripts
 
