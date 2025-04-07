@@ -11,7 +11,7 @@ export const Header = styled.h2`
   margin: 0;
 `;
 
-export const Div = styled.div`
+export const NewTaskContainer = styled.div`
   padding: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {

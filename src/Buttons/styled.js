@@ -17,7 +17,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Div = styled.div`
+export const StyledButtons = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: grid;
     grid-template-columns: 1fr;
