@@ -4,29 +4,16 @@ import Tasks from "./Tasks";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { useTasks } from "./useTasks";
-
-const theme = {
-  colors: {
-    primaryColor: "teal",
-    hoverColor: "hsl(180 48% 57%)",
-  },
-  breakpoints: {
-    mobile: 767,
-  },
-};
+import { theme } from "./theme";
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone((hideDone) => !hideDone);
-  };
-
+ 
   const {
     tasks,
+    hideDone,
+    toggleHideDone,
     removeTask,
     toggleTaskDone,
     setAllDone,
@@ -47,7 +34,7 @@ function App() {
           body={
             <Tasks
               tasks={tasks}
-              hideDone={hideDone}
+              hideDone={( hideDone )}
               removeTask={removeTask}
               toggleTaskDone={toggleTaskDone}
             />
@@ -55,7 +42,7 @@ function App() {
           extraHeaderContent={
             <Buttons
               tasks={tasks}
-              hideDone={hideDone}
+              hideDone={( hideDone )}
               toggleHideDone={toggleHideDone}
               setAllDone={setAllDone}
             />
