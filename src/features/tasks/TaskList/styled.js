@@ -26,8 +26,8 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
-  ${({ done }) =>
-    done &&
+  ${({ $done }) =>
+    $done &&
     css`
       text-decoration: line-through;
     `}
@@ -54,8 +54,8 @@ export const Button = styled.button`
     border-radius: 2px;
   }
 
-  ${({ remove }) =>
-    remove &&
+  ${({ $remove }) =>
+    $remove &&
     css`
       background-color: rgb(236, 41, 56);
 
