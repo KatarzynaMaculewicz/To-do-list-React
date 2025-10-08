@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Button, StyledButtons } from "./styled";
+import { Button, StyledButtons } from "../styledButtons";
 import {
   selectTasksState,
   toggleHideDone,
@@ -24,7 +24,7 @@ const Buttons = () => {
             disabled={isEveryTaskDone}
             onClick={() => dispatch(setAllDone())}
           >
-            Ukończ wszyskie
+            Ukończ wszystkie
           </Button>
         </>
       )}
