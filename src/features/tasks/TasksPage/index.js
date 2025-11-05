@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import Buttons from "./Buttons";
 import Form from "./Form";
+import Search from "./Search";
 import TaskList from "./TaskList";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
@@ -29,6 +30,7 @@ function TasksPage() {
           </Button>
         }
       />
+      <Section title="Wyszukiwarka" body={<Search />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}
