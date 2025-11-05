@@ -1,8 +1,12 @@
 # To do list
 
-The to-do list application makes creating and managing your daily tasks easy. The interface is intuitive, allowing you to enter new tasks in a designated field. You can write down a new task in the field, mark it as done or to-do using a green button, and delete it by clicking on the red one. It allows you to easily mark all tasks as done or hide all done tasks with one simple click. 
+The to-do list application makes creating and managing your daily tasks easy. The interface is intuitive, allowing you to add new tasks in a designated field. You can write down a new task, mark it as done or to-do using the green button, and delete it by clicking on the red one. You can also easily mark all tasks as done or hide all completed ones with a single click.
 
-It is a basic to-do list application that offers all the essential features needed to effectively manage your daily activities.
+Each task has its own dedicated page where you can view its details and completion status. The application also includes a search bar that allows you to quickly find specific tasks and a button for loading example tasks to help you explore the app’s functionality.
+
+Additionally, there is a separate tips page that provides helpful suggestions on how to organize and manage your tasks more effectively.
+
+It is a simple yet complete to-do list application that offers all the essential features needed to efficiently manage your daily activities.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,7 +27,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React
 - Styled-components
 - Custom Hooks
-- Redux
+- Redux-Saga
+- Redux-Router
+- Redux-Toolkit
 
 ## Available Scripts
 
