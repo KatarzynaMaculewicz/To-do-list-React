@@ -14,6 +14,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &.${activeClassName} {
     font-weight: bold;
   }
+
+  &:hover {
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.hoverColor};
+  }
 `;
 
 export const List = styled.ul`
