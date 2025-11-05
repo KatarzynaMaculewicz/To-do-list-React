@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
   list-style: none;
@@ -25,11 +26,17 @@ export const Item = styled.li`
     `}
 `;
 
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.primaryColor};
+`;
+
 export const Content = styled.span`
   ${({ $done }) =>
     $done &&
     css`
       text-decoration: line-through;
+      color: ${({ theme }) => theme.colors.primaryColor};
     `}
 `;
 
