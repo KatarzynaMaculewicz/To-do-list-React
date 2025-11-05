@@ -25,3 +25,9 @@ export const StyledButtons = styled.div`
     gap: 20px;
   }
 `;
+
+export const LoadingError = styled.p`
+  color: ${({ theme }) => theme.colors.errorColor};
+  text-align: right;
+  padding: 20px;
+`;
