@@ -4,21 +4,12 @@ import { theme } from "./theme";
 import TasksPage from "./features/tasks/TasksPage/index.js";
 import TaskPage from "./features/tasks/TaskPage";
 import TipsPage from "./features/tips/TipsPage.js";
-import { List, Item, StyledNavLink } from "./styled";
+import { Navigation } from "./features/navigation/Navigation.js";
 
 export default () => (
   <ThemeProvider theme={theme}>
     <HashRouter>
-      <nav>
-        <List>
-          <Item>
-            <StyledNavLink to="/zadania">Zadania</StyledNavLink>
-          </Item>
-          <Item>
-            <StyledNavLink to="/tips">Wskazówki</StyledNavLink>
-          </Item>
-        </List>
-      </nav>
+      <Navigation />
       <Switch>
         <Route path="/zadania/:id">
           <TaskPage />
@@ -26,7 +17,7 @@ export default () => (
         <Route path="/zadania">
           <TasksPage />
         </Route>
-        <Route path="/tips">
+        <Route path="/wskazowki">
           <TipsPage />
         </Route>
         <Route path="/">
