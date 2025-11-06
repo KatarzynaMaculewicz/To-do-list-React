@@ -8,6 +8,7 @@ import {
   selectTasksByQuery,
 } from "../../tasksSlice.js";
 import searchQueryParamName from "../searchQueryParamName.js";
+import { toTask } from "../../../../routes.js";
 
 const TaskList = () => {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ const TaskList = () => {
             {task.done ? "✔" : ""}
           </Button>
           <Content $done={task.done}>
-            <StyledNavLink to={`/zadania/${task.id}`}>{task.content}</StyledNavLink>
+            <StyledNavLink to={toTask({ id: task.id})}>{task.content}</StyledNavLink>
           </Content>
           <Button $remove onClick={() => dispatch(removeTask(task.id))}>
             🗑

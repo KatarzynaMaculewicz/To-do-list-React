@@ -5,23 +5,24 @@ import TasksPage from "./features/tasks/TasksPage/index.js";
 import TaskPage from "./features/tasks/TaskPage";
 import TipsPage from "./features/tips/TipsPage.js";
 import { Navigation } from "./features/navigation/Navigation.js";
+import { toTasks, toHints, toTask } from "./routes.js";
 
 export default () => (
   <ThemeProvider theme={theme}>
     <HashRouter>
       <Navigation />
       <Switch>
-        <Route path="/zadania/:id">
+        <Route path={toTask()}>
           <TaskPage />
         </Route>
-        <Route path="/zadania">
+        <Route path={toTasks()}>
           <TasksPage />
         </Route>
-        <Route path="/wskazowki">
+        <Route path={toHints()}>
           <TipsPage />
         </Route>
         <Route path="/">
-          <Redirect to="/zadania" />
+          <Redirect to={toTasks()} />
         </Route>
       </Switch>
     </HashRouter>
