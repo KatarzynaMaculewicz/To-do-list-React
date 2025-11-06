@@ -1,5 +1,5 @@
-import { List, Item, StyledNavLink } from "./styled";
-import { toTasks, toHints } from "../../routes.js";
+import { List, Item, StyledNavLink } from "./styled.js";
+import { toTasks, toHints } from "../routes.js";
 
 export const Navigation = () => {
   return (

@@ -4,7 +4,7 @@ import { theme } from "./theme";
 import TasksPage from "./features/tasks/TasksPage/index.js";
 import TaskPage from "./features/tasks/TaskPage";
 import TipsPage from "./features/tips/TipsPage.js";
-import { Navigation } from "./features/navigation/Navigation.js";
+import { Navigation } from "./Navigation/index.js";
 import { toTasks, toHints, toTask } from "./routes.js";
 
 export default () => (
