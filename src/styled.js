@@ -16,8 +16,8 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   }
 
   &:hover {
-    font-weight: bold;
-    color: ${({ theme }) => theme.colors.hoverColor};
+    text-decoration:underline;
+    text-underline-offset: 5px;
   }
 `;
 
